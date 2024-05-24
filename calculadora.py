@@ -22,14 +22,14 @@ def calculator():
                 operation_str = "Subtração"
             elif operation == '3':
                 if numero2 == 0:
-                    print("Erro: Divisão por zero não é permitida. Por favor, tente novamente.")
+                    print("ERRO!!!: Divisão por zero não é permitida. Por favor, tente novamente.")
                     continue
                 resultadoFinal = numero1 / numero2
                 operation_str = "Divisão"
             elif operation == '4':
                 resultadoFinal = numero1 * numero2
                 operation_str = "Multiplicação"
-            print(f"O resultadoFinalado da {operation_str} entre {numero1} e {numero2} é: {resultadoFinal}")
+            print(f"O resultado Final da {operation_str} entre {numero1} e {numero2} é: {resultadoFinal}")
             another_calculation = input("Deseja realizar outra operação? (s/n): ").lower()
             if another_calculation != 's':
                 break
